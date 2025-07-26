@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: spotify-auth-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: CLIENT_ID
+        value: f39352bfae6b44d1805848b81396cd1d
+      - key: CLIENT_SECRET
+        value: 881f8af97ae443e1a2f7f51309a924dc
+      - key: REDIRECT_URI
+        value: https://jolly-taffy-99923a.netlify.app/
