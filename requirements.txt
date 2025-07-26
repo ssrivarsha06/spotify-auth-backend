@@ -2,3 +2,6 @@ Flask
 spotipy
 flask-cors
 requests
+gunicorn
+requests
+python-dotenv
